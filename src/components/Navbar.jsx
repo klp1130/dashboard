@@ -34,8 +34,8 @@ const Navbar = () => {
   const { activeMenu, setActiveMenu } = useStateContext()
 
   return (
-    <div className='flex justify-between p-2
-    md:mx-6 relative'>
+  <div className='flex justify-between p-2
+      md:mx-6 relative'>
       <NavButton  
         title='Menu' 
         customFunc={() => 
@@ -45,6 +45,7 @@ const Navbar = () => {
         color='blue' 
         icon={<AiOutlineMenu />} 
       />
+
     <div className='flex'>
       <NavButton 
         title='Cart'
@@ -52,6 +53,7 @@ const Navbar = () => {
         color='blue' 
         icon={<FiShoppingCart />} 
       />
+    </div>  
     <div className='flex'>
       <NavButton 
         title='Chat'
@@ -60,6 +62,7 @@ const Navbar = () => {
         color='blue' 
         icon={<BsChatLeft />} 
       />
+    </div>    
     <div className='flex'>
       <NavButton 
         title='Notification'
@@ -67,6 +70,7 @@ const Navbar = () => {
         color='blue' 
         icon={<RiNotification3Line />} 
       />  
+    </div> 
     <div className='flex'>
       <NavButton 
         title='UserProfile'
@@ -75,7 +79,7 @@ const Navbar = () => {
         icon={<FiShoppingCart />} 
       />  
     </div>  
-    </div>
+  </div>
   )
 }
 
