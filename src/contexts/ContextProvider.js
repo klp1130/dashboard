@@ -15,6 +15,13 @@ export const ContextProvider = ({ children }) => {
     (true)
     const [isClicked, setIsClicked] = useState(initialState)
     
+    // is clicked is string. spread initial state where eveything is false 
+    // inside [] only chanhe value that has been clicked and set to true
+    const handleClick = (clicked) => {
+        setIsClicked({ ...initialState, [clicked]:
+        true })
+    }
+
     return (
         <StateContext.Provider
         value={{ 
@@ -22,6 +29,7 @@ export const ContextProvider = ({ children }) => {
             setActiveMenu,
             isClicked,
             setIsClicked,
+            handleClick
          }}
         >
             {children}
