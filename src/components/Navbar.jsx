@@ -34,8 +34,8 @@ const Navbar = () => {
   const { activeMenu, setActiveMenu } = useStateContext()
 
   return (
-  <div className='flex justify-between p-2
-      md:mx-6 relative'>
+  <div className='flex  justify-between p-2
+      md:ml-6 md:mr-6 relative'>
       <NavButton  
         title='Menu' 
         customFunc={() => 
@@ -45,7 +45,6 @@ const Navbar = () => {
         color='blue' 
         icon={<AiOutlineMenu />} 
       />
-
     <div className='flex'>
       <NavButton 
         title='Cart'
@@ -53,8 +52,6 @@ const Navbar = () => {
         color='blue' 
         icon={<FiShoppingCart />} 
       />
-    </div>  
-    <div className='flex'>
       <NavButton 
         title='Chat'
         dotColor='#03c9d7'
@@ -62,23 +59,38 @@ const Navbar = () => {
         color='blue' 
         icon={<BsChatLeft />} 
       />
-    </div>    
-    <div className='flex'>
       <NavButton 
         title='Notification'
+        dotColor='#03c9d7'
         customFunc={() => ('cart')} 
         color='blue' 
         icon={<RiNotification3Line />} 
-      />  
+      />   
+      <TooltipComponent
+        content='Profile'
+        position='BottomCenter'
+      >
+        <div className='flex items-center
+        gap-2 cursor-pointer p-1 
+        hover:bg-light-gray rounded-lg '
+        onClick={() => ('userProfile')}>
+          <img 
+            className='rounded-full w-8 h-8'
+            alt='user avatar'
+            src={avatar}
+          />
+          <p>
+            <span className='text-gray-400
+            text-14'>Hi, </span>  {' '}
+            <span className='text-gray-400
+            font-bold ml-1 text-14'>Keenan
+            </span>
+          </p>
+          <MdKeyboardArrowDown className='text-gray-400
+            text-14' />
+        </div>
+      </TooltipComponent>
     </div> 
-    <div className='flex'>
-      <NavButton 
-        title='UserProfile'
-        customFunc={() => ('cart')} 
-        color='blue' 
-        icon={<FiShoppingCart />} 
-      />  
-    </div>  
   </div>
   )
 }
