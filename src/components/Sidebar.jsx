@@ -28,7 +28,7 @@ const Sidebar = () => {
       {activeMenu && (<>
         <div className='flex justify-between
         items-center'>
-          <Link to='/' onClick={() => setActiveMenu(false)}
+          <Link to='/' onClick={handlecloseSideBar}
           className='items-center gap-3 ml-3
           mt-4 flex text-xl font-extrabold
           tracking-tight dark:text-white
@@ -60,7 +60,7 @@ const Sidebar = () => {
                 <NavLink
                 to={`/${link.name}`}
                 key={link.name}
-                onClick={() => {}} 
+                onClick={handlecloseSideBar} /* close sidebar after click on mobile with so user can see content */
                 className= {({isActive}) =>
                 isActive ? activeLink : 
                 normalLink}
