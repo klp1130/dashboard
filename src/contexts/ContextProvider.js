@@ -11,12 +11,12 @@ const initialState = {
 }
 
 export const ContextProvider = ({ children }) => {
-    const [activeMenu, setActiveMenu] = useState
-    (true)
+    const [activeMenu, setActiveMenu] = useState(true)
     const [isClicked, setIsClicked] = useState(initialState)
+    const [screenSize, setScreenSize] = useState(undefined)
     
     // is clicked is string. spread initial state where eveything is false 
-    // inside [] only chanhe value that has been clicked and set to true
+    // inside [] only change value that has been clicked and set to true
     const handleClick = (clicked) => {
         setIsClicked({ ...initialState, [clicked]:
         true })
@@ -29,7 +29,9 @@ export const ContextProvider = ({ children }) => {
             setActiveMenu,
             isClicked,
             setIsClicked,
-            handleClick
+            handleClick,
+            screenSize,
+            setScreenSize,
          }}
         >
             {children}
