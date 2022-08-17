@@ -9,10 +9,14 @@ stackedPrimaryXAxis, stackedPrimaryYAxis } from '../../data/dummy'
 
 
 
-const Stacked = () => {
+const Stacked = ({ width, height }) => {
   return (
-    <ChartComponent>
-      
+    <ChartComponent
+      width={width}
+      height={height}
+    >
+      <Inject services={[Legend, Category,
+      StackingColumnSeries, Tooltip]} />
     </ChartComponent>
   )
 }
