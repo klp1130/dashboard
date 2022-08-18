@@ -18,7 +18,7 @@ const Customers = () => {
         allowSorting
         toolbar={['Delete']}
         editSettings={{ allowDeleting: true, 
-        allowEditing }}
+        allowEditing: true }}
         width='auto' 
       >
         <ColumnsDirective>
