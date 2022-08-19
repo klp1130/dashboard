@@ -42,8 +42,10 @@ const  ThemeSettings = () => {
             value='Light'
             className='cursor-pointer'
             onChange={() => {}}
+            checked={true}
             />
-             
+            <label htmlFor='light'>
+            </label>
           </div>
         </div>
       </div>
