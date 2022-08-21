@@ -23,13 +23,17 @@ export const ContextProvider = ({ children }) => {
 
     //update local storage so user has same theme from previous use
     localStorage.setItem('themeMode', e.target.value)
+
+    setThemeSettings(false)
     }
 
-    const setColor = (e) => {
-        setCurrentColor(e.target.value) 
+    const setColor = (color) => {
+        setCurrentColor(color) 
 
     //update local storage so user has same color from previous use
-    localStorage.setItem('colorMode', e.target.value)
+    localStorage.setItem('colorMode', color)
+
+    setThemeSettings(false)
     }
 
     // is clicked is string. spread initial state where eveything is false 
@@ -51,10 +55,10 @@ export const ContextProvider = ({ children }) => {
             setScreenSize,
             currentColor,
             currentMode, 
-            setCurrentColor,
-            setCurrentMode,
             themeSettings, 
-            setThemeSettings
+            setThemeSettings,
+            setMode,
+            setColor
          }}
         >
             {children}

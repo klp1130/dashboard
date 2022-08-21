@@ -125,6 +125,7 @@ const Ecommerce = () => {
             </div>
 
             <div className='mt-5'>
+              {/* internal error in Spankline component
               <SparkLine 
               currentColor='blue'
               id='line-sparkline'
@@ -134,6 +135,7 @@ const Ecommerce = () => {
               data={SparklineAreaData}
               color='blue'
               />
+              */}
             </div>
             <div className='mt-10'>
               <Button 
