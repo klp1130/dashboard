@@ -16,6 +16,21 @@ export const ContextProvider = ({ children }) => {
     const [screenSize, setScreenSize] = useState(undefined)
     const [currentColor, setCurrentColor] = useState('#03C9D7')
     const [currentMode, setCurrentMode] = useState('Light')
+    const [themeSettings, setThemeSettings] = useState(false)
+
+    const setMode = (e) => {
+        setCurrentMode(e.target.value) 
+
+    //update local storage so user has same theme from previous use
+    localStorage.setItem('themeMode', e.target.value)
+    }
+
+    const setColor = (e) => {
+        setCurrentColor(e.target.value) 
+
+    //update local storage so user has same color from previous use
+    localStorage.setItem('colorMode', e.target.value)
+    }
 
     // is clicked is string. spread initial state where eveything is false 
     // inside [] only change value that has been clicked and set to true
@@ -34,6 +49,12 @@ export const ContextProvider = ({ children }) => {
             handleClick,
             screenSize,
             setScreenSize,
+            currentColor,
+            currentMode, 
+            setCurrentColor,
+            setCurrentMode,
+            themeSettings, 
+            setThemeSettings
          }}
         >
             {children}
