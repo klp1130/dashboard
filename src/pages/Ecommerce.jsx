@@ -69,8 +69,6 @@ const Ecommerce = () => {
             <p className='text-sm text-gray-400 mt-1'>
               {item.title}
             </p>
-
-
           </div>  
         ))}
       </div>
@@ -126,9 +124,8 @@ const Ecommerce = () => {
               <p className='text-gray-500
               mt-1'>Expense</p>
             </div>
-
+            {/* internal error in Spankline component
             <div className='mt-5'>
-              {/* internal error in Spankline component
               <SparkLine 
               currentColor={currentColor}
               id='line-sparkline'
@@ -158,11 +155,8 @@ const Ecommerce = () => {
           </div>
         </div>
       </div>
-
-
     </div>
 
-  </div>
   )
 }
 
