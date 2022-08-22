@@ -1,9 +1,10 @@
 import React from 'react';
-import { AiOutlineCalendar, AiOutlineShoppingCart, AiOutlineAreaChart, AiOutlineBarChart, AiOutlineStock } from 'react-icons/ai';
+import { AiOutlineCalendar, AiOutlineShoppingCart, AiOutlineAreaChart, AiOutlineBarChart, AiOutlineStock, AiOutlineDropbox } from 'react-icons/ai';
 import { FiShoppingBag, FiEdit, FiPieChart, FiBarChart, FiCreditCard, FiStar, FiShoppingCart } from 'react-icons/fi';
-import { BsKanban, BsBarChart, BsBoxSeam, BsCurrencyDollar, BsShield, BsChatLeft } from 'react-icons/bs';
+import { BsKanban, BsBarChart, BsBoxSeam, BsCurrencyDollar, BsShield, BsChatLeft, BsCameraVideo } from 'react-icons/bs';
 import { BiColorFill } from 'react-icons/bi';
 import { IoMdContacts } from 'react-icons/io';
+import { SiGmail } from 'react-icons/si'
 import { RiContactsLine, RiStockLine } from 'react-icons/ri';
 import { MdOutlineSupervisorAccount } from 'react-icons/md';
 import { HiOutlineRefresh } from 'react-icons/hi';
@@ -516,6 +517,19 @@ export const links = [
         name: 'color-picker',
         icon: <BiColorFill />,
       },
+      {
+        name: 'Gmail',
+        icon: <SiGmail />,
+      },
+      {
+        name: 'DropBox',
+        icon: <AiOutlineDropbox />,
+      },
+      {
+        name: 'Zoom',
+        icon: <BsCameraVideo />,
+      },
+      
     ],
   },
   {
@@ -528,31 +542,6 @@ export const links = [
       {
         name: 'area',
         icon: <AiOutlineAreaChart />,
-      },
-
-      {
-        name: 'bar',
-        icon: <AiOutlineBarChart />,
-      },
-      {
-        name: 'pie',
-        icon: <FiPieChart />,
-      },
-      {
-        name: 'financial',
-        icon: <RiStockLine />,
-      },
-      {
-        name: 'color-mapping',
-        icon: <BsBarChart />,
-      },
-      {
-        name: 'pyramid',
-        icon: <GiLouvrePyramid />,
-      },
-      {
-        name: 'stacked',
-        icon: <AiOutlineBarChart />,
       },
     ],
   },
@@ -926,19 +915,19 @@ export const customersData = [
     CustomerEmail: 'nirav@gmail.com',
     CustomerImage:
       avatar2,
-    ProjectName: 'Hosting Press HTML',
+    ProjectName: 'Banf Retreat',
     Status: 'Active',
     StatusBg: '#8BE78B',
     Weeks: '40',
     Budget: '$2.4k',
-    Location: 'India',
+    Location: 'Canada',
   },
   {
     CustomerID: 1002,
 
     CustomerName: 'Sunil Joshi',
     CustomerEmail: 'sunil@gmail.com',
-    ProjectName: 'Elite Admin',
+    ProjectName: '30 day Digital Detox',
     Status: 'Active',
     CustomerImage:
       avatar3,
@@ -946,14 +935,14 @@ export const customersData = [
     StatusBg: '#8BE78B',
     Weeks: '11',
     Budget: '$3.9k',
-    Location: 'India',
+    Location: 'Canada',
   },
   {
     CustomerID: 1003,
 
     CustomerName: 'Andrew McDownland',
     CustomerEmail: 'andrew@gmail.com',
-    ProjectName: 'Real Homes WP Theme',
+    ProjectName: 'Yoga Teacher Training',
     Status: 'Pending',
     CustomerImage:
       avatar4,
@@ -967,7 +956,7 @@ export const customersData = [
 
     CustomerName: 'Christopher Jamil',
     CustomerEmail: 'jamil@gmail.com',
-    ProjectName: 'MedicalPro WP Theme',
+    ProjectName: 'Membership Site',
     Status: 'Completed',
     CustomerImage:
       avatar,
@@ -996,19 +985,19 @@ export const customersData = [
     CustomerEmail: 'nirav@gmail.com',
     CustomerImage:
       avatar2,
-    ProjectName: 'Hosting Press HTML',
+    ProjectName: 'Banf Retreat',
     Status: 'Active',
     StatusBg: '#8BE78B',
     Weeks: '40',
     Budget: '$2.4k',
-    Location: 'India',
+    Location: 'Canada',
   },
   {
     CustomerID: 1007,
 
     CustomerName: 'Sunil Joshi',
     CustomerEmail: 'sunil@gmail.com',
-    ProjectName: 'Elite Admin',
+    ProjectName: '30 day Digital Detox',
     Status: 'Active',
     CustomerImage:
       avatar3,
@@ -1016,14 +1005,14 @@ export const customersData = [
     StatusBg: '#8BE78B',
     Weeks: '11',
     Budget: '$3.9k',
-    Location: 'India',
+    Location: 'Canada',
   },
   {
     CustomerID: 1008,
 
     CustomerName: 'Andrew McDownland',
     CustomerEmail: 'andrew@gmail.com',
-    ProjectName: 'Real Homes WP Theme',
+    ProjectName: 'Yoga Teacher Training',
     Status: 'Pending',
     CustomerImage:
       avatar4,
@@ -1037,7 +1026,7 @@ export const customersData = [
 
     CustomerName: 'Christopher Jamil',
     CustomerEmail: 'jamil@gmail.com',
-    ProjectName: 'MedicalPro WP Theme',
+    ProjectName: 'Membership Site',
     Status: 'Completed',
     CustomerImage:
       avatar,
@@ -1066,19 +1055,19 @@ export const customersData = [
     CustomerEmail: 'nirav@gmail.com',
     CustomerImage:
       avatar2,
-    ProjectName: 'Hosting Press HTML',
+    ProjectName: 'Banf Retreat',
     Status: 'Active',
     StatusBg: '#8BE78B',
     Weeks: '40',
     Budget: '$2.4k',
-    Location: 'India',
+    Location: 'Canada',
   },
   {
     CustomerID: 1012,
 
     CustomerName: 'Sunil Joshi',
     CustomerEmail: 'sunil@gmail.com',
-    ProjectName: 'Elite Admin',
+    ProjectName: '30 day Digital Detox',
     Status: 'Active',
     CustomerImage:
       avatar3,
@@ -1086,14 +1075,14 @@ export const customersData = [
     StatusBg: '#8BE78B',
     Weeks: '11',
     Budget: '$3.9k',
-    Location: 'India',
+    Location: 'Canada',
   },
   {
     CustomerID: 1013,
 
     CustomerName: 'Andrew McDownland',
     CustomerEmail: 'andrew@gmail.com',
-    ProjectName: 'Real Homes WP Theme',
+    ProjectName: 'Yoga Teacher Training',
     Status: 'Pending',
     CustomerImage:
       avatar4,
@@ -1107,7 +1096,7 @@ export const customersData = [
 
     CustomerName: 'Christopher Jamil',
     CustomerEmail: 'jamil@gmail.com',
-    ProjectName: 'MedicalPro WP Theme',
+    ProjectName: 'Membership Site',
     Status: 'Completed',
     CustomerImage:
       avatar,
@@ -1136,19 +1125,19 @@ export const customersData = [
     CustomerEmail: 'nirav@gmail.com',
     CustomerImage:
       avatar2,
-    ProjectName: 'Hosting Press HTML',
+    ProjectName: 'Banf Retreat',
     Status: 'Active',
     StatusBg: '#8BE78B',
     Weeks: '40',
     Budget: '$2.4k',
-    Location: 'India',
+    Location: 'Canada',
   },
   {
     CustomerID: 1017,
 
     CustomerName: 'Sunil Joshi',
     CustomerEmail: 'sunil@gmail.com',
-    ProjectName: 'Elite Admin',
+    ProjectName: '30 day Digital Detox',
     Status: 'Active',
     CustomerImage:
       avatar3,
@@ -1156,14 +1145,14 @@ export const customersData = [
     StatusBg: '#8BE78B',
     Weeks: '11',
     Budget: '$3.9k',
-    Location: 'India',
+    Location: 'Canada',
   },
   {
     CustomerID: 1018,
 
     CustomerName: 'Andrew McDownland',
     CustomerEmail: 'andrew@gmail.com',
-    ProjectName: 'Real Homes WP Theme',
+    ProjectName: 'Yoga Teacher Training',
     Status: 'Pending',
     CustomerImage:
       avatar4,
@@ -1177,7 +1166,7 @@ export const customersData = [
 
     CustomerName: 'Christopher Jamil',
     CustomerEmail: 'jamil@gmail.com',
-    ProjectName: 'MedicalPro WP Theme',
+    ProjectName: 'Membership Site',
     Status: 'Completed',
     CustomerImage:
       avatar,
@@ -1206,19 +1195,19 @@ export const customersData = [
     CustomerEmail: 'nirav@gmail.com',
     CustomerImage:
       avatar2,
-    ProjectName: 'Hosting Press HTML',
+    ProjectName: 'Banf Retreat',
     Status: 'Active',
     StatusBg: '#8BE78B',
     Weeks: '40',
     Budget: '$2.4k',
-    Location: 'India',
+    Location: 'Canada',
   },
   {
     CustomerID: 1022,
 
     CustomerName: 'Sunil Joshi',
     CustomerEmail: 'sunil@gmail.com',
-    ProjectName: 'Elite Admin',
+    ProjectName: '30 day Digital Detox',
     Status: 'Active',
     CustomerImage:
       avatar3,
@@ -1226,14 +1215,14 @@ export const customersData = [
     StatusBg: '#8BE78B',
     Weeks: '11',
     Budget: '$3.9k',
-    Location: 'India',
+    Location: 'Canada',
   },
   {
     CustomerID: 1023,
 
     CustomerName: 'Andrew McDownland',
     CustomerEmail: 'andrew@gmail.com',
-    ProjectName: 'Real Homes WP Theme',
+    ProjectName: 'Yoga Teacher Training',
     Status: 'Pending',
     CustomerImage:
       avatar4,
@@ -1247,7 +1236,7 @@ export const customersData = [
 
     CustomerName: 'Christopher Jamil',
     CustomerEmail: 'jamil@gmail.com',
-    ProjectName: 'MedicalPro WP Theme',
+    ProjectName: 'Membership Site',
     Status: 'Completed',
     CustomerImage:
       avatar,
@@ -1276,19 +1265,19 @@ export const customersData = [
     CustomerEmail: 'nirav@gmail.com',
     CustomerImage:
       avatar2,
-    ProjectName: 'Hosting Press HTML',
+    ProjectName: 'Banf Retreat',
     Status: 'Active',
     StatusBg: '#8BE78B',
     Weeks: '40',
     Budget: '$2.4k',
-    Location: 'India',
+    Location: 'Canada',
   },
   {
     CustomerID: 1027,
 
     CustomerName: 'Sunil Joshi',
     CustomerEmail: 'sunil@gmail.com',
-    ProjectName: 'Elite Admin',
+    ProjectName: '30 day Digital Detox',
     Status: 'Active',
     CustomerImage:
       avatar3,
@@ -1296,14 +1285,14 @@ export const customersData = [
     StatusBg: '#8BE78B',
     Weeks: '11',
     Budget: '$3.9k',
-    Location: 'India',
+    Location: 'Canada',
   },
   {
     CustomerID: 1028,
 
     CustomerName: 'Andrew McDownland',
     CustomerEmail: 'andrew@gmail.com',
-    ProjectName: 'Real Homes WP Theme',
+    ProjectName: 'Yoga Teacher Training',
     Status: 'Pending',
     CustomerImage:
       avatar4,
@@ -1317,7 +1306,7 @@ export const customersData = [
 
     CustomerName: 'Christopher Jamil',
     CustomerEmail: 'jamil@gmail.com',
-    ProjectName: 'MedicalPro WP Theme',
+    ProjectName: 'Membership Site',
     Status: 'Completed',
     CustomerImage:
       avatar,
@@ -1346,19 +1335,19 @@ export const customersData = [
     CustomerEmail: 'nirav@gmail.com',
     CustomerImage:
       avatar2,
-    ProjectName: 'Hosting Press HTML',
+    ProjectName: 'Banf Retreat',
     Status: 'Active',
     StatusBg: '#8BE78B',
     Weeks: '40',
     Budget: '$2.4k',
-    Location: 'India',
+    Location: 'Canada',
   },
   {
     CustomerID: 1032,
 
     CustomerName: 'Sunil Joshi',
     CustomerEmail: 'sunil@gmail.com',
-    ProjectName: 'Elite Admin',
+    ProjectName: '30 day Digital Detox',
     Status: 'Active',
     CustomerImage:
       avatar3,
@@ -1366,14 +1355,14 @@ export const customersData = [
     StatusBg: '#8BE78B',
     Weeks: '11',
     Budget: '$3.9k',
-    Location: 'India',
+    Location: 'Canada',
   },
   {
     CustomerID: 1033,
 
     CustomerName: 'Andrew McDownland',
     CustomerEmail: 'andrew@gmail.com',
-    ProjectName: 'Real Homes WP Theme',
+    ProjectName: 'Yoga Teacher Training',
     Status: 'Pending',
     CustomerImage:
       avatar4,
@@ -1387,7 +1376,7 @@ export const customersData = [
 
     CustomerName: 'Christopher Jamil',
     CustomerEmail: 'jamil@gmail.com',
-    ProjectName: 'MedicalPro WP Theme',
+    ProjectName: 'Membership Site',
     Status: 'Completed',
     CustomerImage:
       avatar,
@@ -1416,19 +1405,19 @@ export const customersData = [
     CustomerEmail: 'nirav@gmail.com',
     CustomerImage:
       avatar2,
-    ProjectName: 'Hosting Press HTML',
+    ProjectName: 'Banf Retreat',
     Status: 'Active',
     StatusBg: '#8BE78B',
     Weeks: '40',
     Budget: '$2.4k',
-    Location: 'India',
+    Location: 'Canada',
   },
   {
     CustomerID: 1037,
 
     CustomerName: 'Sunil Joshi',
     CustomerEmail: 'sunil@gmail.com',
-    ProjectName: 'Elite Admin',
+    ProjectName: '30 day Digital Detox',
     Status: 'Active',
     CustomerImage:
       avatar3,
@@ -1436,14 +1425,14 @@ export const customersData = [
     StatusBg: '#8BE78B',
     Weeks: '11',
     Budget: '$3.9k',
-    Location: 'India',
+    Location: 'Canada',
   },
   {
     CustomerID: 1038,
 
     CustomerName: 'Andrew McDownland',
     CustomerEmail: 'andrew@gmail.com',
-    ProjectName: 'Real Homes WP Theme',
+    ProjectName: 'Yoga Teacher Training',
     Status: 'Pending',
     CustomerImage:
       avatar4,
@@ -1456,7 +1445,7 @@ export const customersData = [
     CustomerID: 1039,
     CustomerName: 'Christopher Jamil',
     CustomerEmail: 'jamil@gmail.com',
-    ProjectName: 'MedicalPro WP Theme',
+    ProjectName: 'Membership Site',
     Status: 'Completed',
     CustomerImage:
       avatar,
@@ -1555,7 +1544,7 @@ export const employeesData = [
   {
     EmployeeID: 1,
     Name: 'Nancy Davolio',
-    Title: 'Sales Representative',
+    Title: 'Content Contributor',
     HireDate: '01/02/2021',
     Country: 'USA',
     ReportsTo: 'Carson',
@@ -1566,7 +1555,7 @@ export const employeesData = [
   {
     EmployeeID: 2,
     Name: 'Nasimiyu Danai',
-    Title: 'Marketing Head',
+    Title: 'Content Contributor',
     HireDate: '01/02/2021',
     Country: 'USA',
     ReportsTo: 'Carson',
@@ -1576,7 +1565,7 @@ export const employeesData = [
   {
     EmployeeID: 3,
     Name: 'Iulia Albu',
-    Title: 'HR',
+    Title: 'Social Media',
     HireDate: '01/02/2021',
     Country: 'USA',
     ReportsTo: 'Carson',
@@ -1586,7 +1575,7 @@ export const employeesData = [
   {
     EmployeeID: 4,
     Name: 'Siegbert Gottfried',
-    Title: 'Marketing Head',
+    Title: 'Content Contributor',
     HireDate: '01/02/2021',
     Country: 'USA',
     ReportsTo: 'Carson',
@@ -1596,7 +1585,7 @@ export const employeesData = [
   {
     EmployeeID: 5,
     Name: 'Omar Darobe',
-    Title: 'HR',
+    Title: 'Content Contributor',
     HireDate: '01/02/2021',
     Country: 'USA',
     ReportsTo: 'Carson',
@@ -1606,7 +1595,7 @@ export const employeesData = [
   {
     EmployeeID: 4,
     Name: 'Penjani Inyene',
-    Title: 'Marketing Head',
+    Title: 'Content Contributor',
     HireDate: '01/02/2021',
     Country: 'USA',
     ReportsTo: 'Carson',
@@ -1616,7 +1605,7 @@ export const employeesData = [
   {
     EmployeeID: 5,
     Name: 'Miron Vitold',
-    Title: 'HR',
+    Title: 'Content Contributor',
     HireDate: '01/02/2021',
     Country: 'USA',
     ReportsTo: 'Carson',
@@ -1626,7 +1615,7 @@ export const employeesData = [
   {
     EmployeeID: 1,
     Name: 'Nancy Davolio',
-    Title: 'Sales Representative',
+    Title: 'Content Contributor',
     HireDate: '01/02/2021',
     Country: 'USA',
     ReportsTo: 'Carson',
@@ -1636,7 +1625,7 @@ export const employeesData = [
   {
     EmployeeID: 2,
     Name: 'Nasimiyu Danai',
-    Title: 'Marketing Head',
+    Title: 'Social Media',
     HireDate: '01/02/2021',
     Country: 'USA',
     ReportsTo: 'Carson',
@@ -1646,7 +1635,7 @@ export const employeesData = [
   {
     EmployeeID: 3,
     Name: 'Iulia Albu',
-    Title: 'HR',
+    Title: 'Content Contributor',
     HireDate: '01/02/2021',
     Country: 'USA',
     ReportsTo: 'Carson',
@@ -1656,7 +1645,7 @@ export const employeesData = [
   {
     EmployeeID: 4,
     Name: 'Siegbert Gottfried',
-    Title: 'Marketing Head',
+    Title: 'Content Contributor',
     HireDate: '01/02/2021',
     Country: 'USA',
     ReportsTo: 'Carson',
@@ -1666,7 +1655,7 @@ export const employeesData = [
   {
     EmployeeID: 5,
     Name: 'Omar Darobe',
-    Title: 'HR',
+    Title: 'Social Media',
     HireDate: '01/02/2021',
     Country: 'USA',
     ReportsTo: 'Carson',
@@ -1676,7 +1665,7 @@ export const employeesData = [
   {
     EmployeeID: 4,
     Name: 'Penjani Inyene',
-    Title: 'Marketing Head',
+    Title: 'Marketing',
     HireDate: '01/02/2021',
     Country: 'USA',
     ReportsTo: 'Carson',
@@ -1686,7 +1675,7 @@ export const employeesData = [
   {
     EmployeeID: 5,
     Name: 'Miron Vitold',
-    Title: 'HR',
+    Title: 'Content Contributor',
     HireDate: '01/02/2021',
     Country: 'USA',
     ReportsTo: 'Carson',
@@ -1696,7 +1685,7 @@ export const employeesData = [
   {
     EmployeeID: 1,
     Name: 'Nancy Davolio',
-    Title: 'Sales Representative',
+    Title: 'Content Contributor',
     HireDate: '01/02/2021',
     Country: 'USA',
     ReportsTo: 'Carson',
@@ -3111,7 +3100,7 @@ export const lineCustomSeries = [
   { dataSource: lineChartData[2],
     xName: 'x',
     yName: 'y',
-    name: 'India',
+    name: 'Canada',
     width: '2',
     marker: { visible: true, width: 10, height: 10 },
     type: 'Line' },

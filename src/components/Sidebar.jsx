@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link, NavLink } from 'react-router-dom'
-import { SiShopware } from 'react-icons/si'
+import { SiAirasia } from 'react-icons/si'
 import { MdOutlineCancel } from 'react-icons/md'
 import { TooltipComponent } from '@syncfusion/ej2-react-popups'
 
@@ -33,7 +33,7 @@ const Sidebar = () => {
           mt-4 flex text-xl font-extrabold
           tracking-tight dark:text-white
           text-slate-900'>
-            <SiShopware /> <span>ArcanaLife</span>
+            <SiAirasia /> <span>ArcanaLife</span>
           </Link>
           <TooltipComponent content='Menu'
           position='BottomCenter'> 
