@@ -215,7 +215,7 @@ export const areaCustomSeries = [
     dataSource: areaChartData[0],
     xName: 'x',
     yName: 'y',
-    name: 'USA',
+    name: 'Canada',
     opacity: '0.8',
     type: 'SplineArea',
     width: '2',
