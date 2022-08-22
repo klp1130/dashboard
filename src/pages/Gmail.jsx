@@ -1,6 +1,6 @@
 import React from 'react'
 import { Button } from '../components'
-import { FcGoogle } from 'react-icons/fc'
+//import { FcGoogle } from 'react-icons/fc'
 import { Header } from '../components'
 import { useStateContext } from '../contexts/ContextProvider'
 
