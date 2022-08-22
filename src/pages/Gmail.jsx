@@ -20,9 +20,7 @@ const Gmail = () => {
                 borderRadius='10px'
                 size='md'
               />
-              <span>
-              <FcGoogle />
-              </span>
+              
      </div>
     </div>
   )
