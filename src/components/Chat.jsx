@@ -1,6 +1,5 @@
 import React from 'react';
 import { MdOutlineCancel } from 'react-icons/md';
-import { TooltipComponent } from '@syncfusion/ej2-react-popups'
 
 import { Button } from '.';
 import { chatData } from '../data/dummy';
