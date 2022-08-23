@@ -10,3 +10,5 @@ export { default as Calendar } from './Calendar';
 export { default as Area } from './Charts/Area';
 export { default as Line } from './Charts/Line';
 export { default as Gmail } from './Gmail';
+export { default as Zoom } from './Zoom'
+export { default as Dropbox } from './Dropbox'
