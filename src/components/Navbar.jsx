@@ -29,8 +29,7 @@ const NavButton = ({ title, customFunc, icon,
 )
 
 const Navbar = () => {
-  const { setActiveMenu, isClicked, 
-     handleClick, screenSize, setScreenSize, currentColor } = useStateContext()
+  const { setActiveMenu, isClicked, handleClick, screenSize, setScreenSize, currentColor } = useStateContext()
 
   useEffect(() => {
     const handleResize = () => setScreenSize
@@ -111,11 +110,11 @@ const Navbar = () => {
             text-14' />
         </div>
       </TooltipComponent>
-
-      {isClicked.cart && <Cart />}
-      {isClicked.chat && <Chat />}
-      {isClicked.notification && <Notification />}
-      {isClicked.userProfile && <UserProfile />}
+            
+      {isClicked.cart && (<Cart />)}
+        {isClicked.chat && (<Chat />)}
+        {isClicked.notification && (<Notification />)}
+        {isClicked.userProfile && (<UserProfile />)}
     </div> 
   </div>
   )
