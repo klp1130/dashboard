@@ -551,23 +551,23 @@ export const cartData = [
   {
     image:
       product5,
-    name: 'butterscotch ice-cream',
-    category: 'Milk product',
-    price: '$250',
+    name: 'Sedona Retreat',
+    category: 'Retreat',
+    price: '$2500',
   },
   {
     image:
       product6,
-    name: 'Supreme fresh tomato',
-    category: 'Vegetable Item',
-    price: '$450',
+    name: 'Eye Cream',
+    category: 'Beauty',
+    price: '$32.38',
   },
   {
     image:
       product7,
-    name: 'Red color candy',
-    category: 'Food Item',
-    price: '$190',
+    name: 'Coaching Call',
+    category: 'Coaching',
+    price: '$125',
   },
 ];
 
@@ -2126,7 +2126,7 @@ export const ordersData = [
   {
     OrderID: 345653,
     CustomerName: 'Carson Darrin',
-    TotalAmount: 56.34,
+    TotalAmount: 2500,
     OrderItems: 'Sedona Retreat',
     Location: 'Canada',
     Status: 'complete',
