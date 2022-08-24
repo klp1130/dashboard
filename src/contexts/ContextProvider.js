@@ -1,4 +1,3 @@
-import { notifications } from "@syncfusion/ej2";
 import React, { createContext, useContext, useState } from "react";
 
 const StateContext = createContext()
@@ -20,24 +19,22 @@ export const ContextProvider = ({ children }) => {
 
     const setMode = (e) => {
         setCurrentMode(e.target.value) 
-
-    //update local storage so user has same theme from previous use
-    localStorage.setItem('themeMode', e.target.value)
-
-    setThemeSettings(false)
+        //update local storage so user has same theme from previous use
+        localStorage.setItem('themeMode', e.target.value)
+        setThemeSettings(false)
     }
 
     const setColor = (color) => {
         setCurrentColor(color) 
-
-    //update local storage so user has same color from previous use
-    localStorage.setItem('colorMode', color)
+        //update local storage so user has same color from previous use
+        localStorage.setItem('colorMode', color)
 
     setThemeSettings(false)
     }
 
     // is clicked is string. spread initial state where eveything is false 
     // inside [] only change value that has been clicked and set to true
+    
     const handleClick = (clicked) => {
         setIsClicked({ ...initialState, [clicked]:
         true })
@@ -58,7 +55,9 @@ export const ContextProvider = ({ children }) => {
             themeSettings, 
             setThemeSettings,
             setMode,
-            setColor
+            setColor,
+            // Nav bar closes now that initialState is passed in context provider
+            initialState
          }}
         >
             {children}

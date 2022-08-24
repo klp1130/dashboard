@@ -84,7 +84,6 @@ const App = () => {
             <Route path='/zoom' element={<Zoom />} />
             <Route path='/dropbox' element={<Dropbox />} />
 
-
             {/* Charts */}
             <Route path='/line' element={<Line />} />
             <Route path='/area' element={<Area />} />

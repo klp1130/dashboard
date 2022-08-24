@@ -14,7 +14,9 @@ const NavButton = ({ title, customFunc, icon,
   color, dotColor }) => (
   <TooltipComponent content={title}
   position='BottomCenter'>
-    <button type='button' onClick={customFunc}
+    <button 
+    type='button' 
+    onClick={customFunc}
     style={{ color }}
     className='relative text-xl rounded-full p-3
     hover:bg-light-gray'
@@ -29,7 +31,8 @@ const NavButton = ({ title, customFunc, icon,
 )
 
 const Navbar = () => {
-  const { setActiveMenu, isClicked, handleClick, screenSize, setScreenSize, currentColor } = useStateContext()
+  const { setActiveMenu, isClicked, setIsClicked, handleClick, 
+    screenSize, setScreenSize, currentColor } = useStateContext()
 
   useEffect(() => {
     const handleResize = () => setScreenSize
@@ -42,7 +45,7 @@ const Navbar = () => {
     return () => window.removeEventListener
     ('resize', handleResize)
 
-  },[])
+  }, [screenSize])
 
   useEffect(() => {
     if(screenSize <= 900) {
@@ -54,8 +57,7 @@ const Navbar = () => {
   }, [screenSize])
 
   return (
-  <div className='flex  justify-between p-2
-      md:ml-6 md:mr-6 relative'>
+  <div className='flex  justify-between p-2 md:ml-6 md:mr-6 relative'>
       <NavButton  
         title='Menu' 
         customFunc={() => 
@@ -86,10 +88,10 @@ const Navbar = () => {
         color={currentColor} 
         icon={<RiNotification3Line />} 
       />   
-      <TooltipComponent
+        <TooltipComponent
         content='Profile'
         position='BottomCenter'
-      >
+        >
         <div className='flex items-center
         gap-2 cursor-pointer p-1 
         hover:bg-light-gray rounded-lg '
@@ -109,9 +111,9 @@ const Navbar = () => {
           <MdKeyboardArrowDown className='text-gray-400
             text-14' />
         </div>
-      </TooltipComponent>
+        </TooltipComponent>
             
-      {isClicked.cart && (<Cart />)}
+        {isClicked.cart && (<Cart />)}
         {isClicked.chat && (<Chat />)}
         {isClicked.notification && (<Notification />)}
         {isClicked.userProfile && (<UserProfile />)}
