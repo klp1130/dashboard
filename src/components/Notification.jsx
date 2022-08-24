@@ -4,7 +4,6 @@ import { MdOutlineCancel } from 'react-icons/md';
 import { Button } from '.';
 import { chatData } from '../data/dummy';
 import { useStateContext } from '../contexts/ContextProvider';
-import { TooltipComponent } from '@syncfusion/ej2-react-popups'
 
 const Notification = () => {
   const { currentColor } = useStateContext();
